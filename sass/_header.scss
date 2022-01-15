@@ -1,11 +1,14 @@
+.container-fluid{
+    z-index: 0;
+}
 .d{
     filter: grayscale(100%);
     background-image: url(/sass/oka.jpg);
     background-repeat: no-repeat;
-    background-size: 40rem;
+    background-size: 100% 120%;
     mix-blend-mode: luminosity;
-    background-position: center left;
-    height: 100%;
+    background-position: center center;
+    height: 100vh;
     width: 100%;
 }
 .filter{
@@ -18,8 +21,8 @@
 .nav-toop{
     position: fixed;
     z-index: 100;
-    width: 80rem;
-    height: 5rem;
+    width: 91%;
+    height: auto;
     background: #585d65;
     border-radius: 50px;
     top: 4rem;

@@ -1,3 +1,4 @@
+
 .section1 {
     position: relative;
     width: 100%;
@@ -8,7 +9,7 @@
         left: -10rem;
         height: 15rem;
         width: 20rem;
-        background: #373b40;
+        background: #373a40;
         border-radius: 200px;
         z-index: 2;
         & h1{
@@ -30,4 +31,58 @@
             color: rgb(221, 221, 221);
         }
     }
+}
+.box2 .button-group{
+
+    & .btn1{
+        border: 1px solid rgb(189, 189, 189);
+        width: 160px;
+        padding: 15px 20px 15px 0px;
+        border-radius: 50px;
+        color: white;
+        position: relative;
+        & span{
+           transition: all 0.5s ease;
+           position: absolute;
+           right: 20px;
+        }
+    }
+    & .btn1:hover span{
+        right: 15px;
+    }
+    & .btn:hover{
+        border: 1px solid #68e0cf;
+        color: #68e0cf;
+    }
+    & .btn2{
+        border-radius: 50%;
+        font-size: 1.1rem;
+        width: 55px; height: 55px;
+        border: 1px solid rgb(189, 189, 189);
+        color: white;
+        position: relative;
+        & i{
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-name: tepapast;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 0.7s;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+@keyframes tepapast{
+    0%{
+        top: 20px;
+    }
+    100%{
+        top: 35px;
+    }
+}
+hr{
+    background: white;
 }

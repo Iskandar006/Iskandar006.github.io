@@ -1,0 +1,48 @@
+.section4{
+    padding: 40px;
+}
+.box0110{
+    .bi{
+        font-size: 30px;
+        color: #68e0cf;
+    }
+    & .btn1{
+        border: 1px solid rgb(189, 189, 189);
+        width: 160px;
+        padding: 15px 20px 15px 0px;
+        border-radius: 50px;
+        color: white;
+        position: relative;
+        & span{
+            transition: all 0.5s ease;
+            position: absolute;
+            right: 40px;
+         }
+    }
+    & .btn1:hover span{
+        right: 25px;
+    }
+    & .btn:hover{
+        border: 1px solid #68e0cf;
+        color: #68e0cf;
+    }
+}
+s{
+    color: rgb(192, 192, 192);
+}
+.new{
+    background: #68e0cf;
+    padding: 3px;
+}
+.beforer{
+    position: relative;
+}
+.beforer::before{
+    content: "";
+    background: white;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    top: 40px;
+    right:  -10%;
+}

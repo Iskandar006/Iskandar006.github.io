@@ -1,12 +1,16 @@
+.container-fluid {
+  z-index: 0;
+}
+
 .d {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   background-image: url(/sass/oka.jpg);
   background-repeat: no-repeat;
-  background-size: 40rem;
+  background-size: 100% 120%;
   mix-blend-mode: luminosity;
-  background-position: center left;
-  height: 100%;
+  background-position: center center;
+  height: 100vh;
   width: 100%;
 }
 
@@ -20,8 +24,8 @@
 .nav-toop {
   position: fixed;
   z-index: 100;
-  width: 80rem;
-  height: 5rem;
+  width: 91%;
+  height: auto;
   background: #585d65;
   border-radius: 50px;
   top: 4rem;
@@ -157,7 +161,7 @@
   left: 45%;
   height: 5rem;
   background: #373b40;
-  z-index: 1;
+  z-index: -100;
 }
 
 .section1 {
@@ -172,7 +176,7 @@
   left: -10rem;
   height: 15rem;
   width: 20rem;
-  background: #373b40;
+  background: #373a40;
   border-radius: 200px;
   z-index: 2;
 }
@@ -197,5 +201,203 @@
 .section1 .box2 p {
   width: 30rem;
   color: #dddddd;
+}
+
+.box2 .button-group .btn1 {
+  border: 1px solid #bdbdbd;
+  width: 160px;
+  padding: 15px 20px 15px 0px;
+  border-radius: 50px;
+  color: white;
+  position: relative;
+}
+
+.box2 .button-group .btn1 span {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  right: 20px;
+}
+
+.box2 .button-group .btn1:hover span {
+  right: 15px;
+}
+
+.box2 .button-group .btn:hover {
+  border: 1px solid #68e0cf;
+  color: #68e0cf;
+}
+
+.box2 .button-group .btn2 {
+  border-radius: 50%;
+  font-size: 1.1rem;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #bdbdbd;
+  color: white;
+  position: relative;
+}
+
+.box2 .button-group .btn2 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: tepapast;
+          animation-name: tepapast;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes tepapast {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+
+@keyframes tepapast {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+
+hr {
+  background: white;
+}
+
+.section2 {
+  padding: 40px;
+  line-height: 30px;
+}
+
+.box3 h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.box3 p {
+  text-transform: uppercase;
+  color: #68e0cf;
+}
+
+.box4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+.boxp {
+  color: #dddddd;
+  font-size: 1rem;
+}
+
+.box5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #68e0cf;
+}
+
+.box5 p {
+  text-transform: uppercase;
+}
+
+.box5 span {
+  color: white;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+
+.section3 {
+  padding: 40px;
+}
+
+.box6 div {
+  margin: 30px 0;
+}
+
+.box6 div p {
+  width: 260px;
+}
+
+.section4 {
+  padding: 40px;
+}
+
+.box0110 .bi {
+  font-size: 30px;
+  color: #68e0cf;
+}
+
+.box0110 .btn1 {
+  border: 1px solid #bdbdbd;
+  width: 160px;
+  padding: 15px 20px 15px 0px;
+  border-radius: 50px;
+  color: white;
+  position: relative;
+}
+
+.box0110 .btn1 span {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  right: 40px;
+}
+
+.box0110 .btn1:hover span {
+  right: 25px;
+}
+
+.box0110 .btn:hover {
+  border: 1px solid #68e0cf;
+  color: #68e0cf;
+}
+
+s {
+  color: silver;
+}
+
+.new {
+  background: #68e0cf;
+  padding: 3px;
+}
+
+.beforer {
+  position: relative;
+}
+
+.beforer::before {
+  content: "";
+  background: white;
+  width: 150px;
+  height: 1px;
+  position: absolute;
+  top: 40px;
+  right: -10%;
+}
+
+.section5 {
+  padding: 40px;
 }
 /*# sourceMappingURL=main.css.map */
