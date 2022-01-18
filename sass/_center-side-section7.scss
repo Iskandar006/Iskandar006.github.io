@@ -1,0 +1,52 @@
+.section7, .section8, .section9, .section10{
+    padding: 40px;
+}
+.language{
+
+    & .mix{
+
+        & p{
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #68e0cf;
+        }
+        & p:nth-child(10){
+            background: gray;
+        }
+    }
+}
+
+// section8
+
+.turi{
+
+    & h3{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: none;
+        border-top: 3px solid #68e0cf;
+        border-bottom: 3px solid #68e0cf;
+        border-right: 3px solid #68e0cf;
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 90px;
+    }
+}
+// section9
+
+.box7{
+    width: 750px;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+// section10
+.section10{
+    padding: 40px;
+    & img{
+        width: 100px;
+    }
+}

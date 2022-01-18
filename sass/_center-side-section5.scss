@@ -1,3 +1,80 @@
 .section5{
     padding: 40px;
 }
+.experience{
+    position: relative;
+    & h6{
+        transform: rotate(90deg);
+        color: #68e0cf;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        font-size: 0.8rem;
+        height: 60px;
+    }
+    & h5{
+        font-weight: 900;
+        margin-left: 50px;
+    }
+    & p{
+        width: 270px;
+    }
+}
+
+//        section6
+.section6{
+    padding: 40px;
+}
+.span1121{
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    & .span1122{
+        height: 3px;
+        width: 85%;
+        background: #68e0cf;
+        position: relative;
+    }
+    & .span1122::before{
+        content: "90%";
+        position: absolute;
+        bottom: 100%;
+        right: -15%;
+    }
+    & .span1123{
+        height: 3px;
+        width: 70%;
+        background: #68e0cf;
+        position: relative;
+    }
+    & .span1123::before{
+        content: "70%";
+        position: absolute;
+        bottom: 100%;
+        right: -15%;
+    }
+    & .span1124{
+        height: 3px;
+        width: 90%;
+        background: #68e0cf;
+        position: relative;
+    }
+    & .span1124::before{
+        content: "95%";
+        position: absolute;
+        bottom: 100%;
+        right: -15%;
+    }
+    & .span1125{
+        height: 3px;
+        width: 80%;
+        background: #68e0cf;
+        position: relative;
+    }
+    & .span1125::before{
+        content: "85%";
+        position: absolute;
+        bottom: 100%;
+        right: -15%;
+    }
+}

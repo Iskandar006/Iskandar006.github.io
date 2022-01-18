@@ -1,0 +1,102 @@
+.section11, .section12{
+    padding: 40px;
+}
+.box8{
+    text-align: center;
+    position: relative;
+    & img{
+        height: 250px;
+        width: 250px;
+    }
+    & p{
+        text-transform: uppercase;
+        color: #68e0cf;
+    }
+    & h5{
+        font-weight: 900;
+        width: 250px;
+    }
+    & div{
+        display: none;
+        height: 200px;
+        width: 200px;
+        background: #68e0cf;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-65%);
+        animation-name: div;
+        animation-timing-function: ease;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+        & i{
+            font-size: 2rem;
+        }
+    }
+}
+@keyframes div{
+    to{
+        height: 200px;
+        width: 200px;
+       
+    }
+    from{
+        height: 100px;
+        width: 100px;
+    }
+}
+.box8:hover .hov{
+    display: flex;
+}
+// section12
+
+form{
+    & .btn{
+        border: 1px solid rgb(189, 189, 189);
+        width: 160px;
+        padding: 15px 20px 15px 0px;
+        border-radius: 50px;
+        color: white;
+        position: relative;
+        font-weight: 700;
+        font-size: 0.8rem;
+        & span{
+           transition: all 0.5s ease;
+           position: absolute;
+           right: 20px;
+        }
+    }
+    & .btn:hover span{
+        right: 15px;
+    }
+    & .btn:hover{
+        border: 1px solid #68e0cf;
+        color: #68e0cf;
+    }
+}
+form{
+    & input{
+        width: 250px;
+        height: 60px;
+        border-radius: 50px;
+        border: 0.5px solid gray;
+        background: #373b40;
+        margin:10px 0;
+        color: white;
+    }
+    & textarea{
+        height: 150px;
+        width: 250px;
+        border-radius: 50px;
+        border: 0.5px solid gray;
+        background: #373b40;
+        margin:10px 0;
+        color: white;
+        text-align:left;
+    }
+}
+.box9{
+    border: 0.5px solid gray;
+    border-radius: 50px;
+    padding: 30px 5px;
+}
